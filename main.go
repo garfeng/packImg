@@ -9,6 +9,9 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
+		fmt.Println("请把装有图片的文件夹托放到程序上")
+		fmt.Println("或运行：", os.Args[0], "<your img path>")
+		pause()
 		return
 	}
 
@@ -28,7 +31,7 @@ func main() {
 		return
 	}
 
-	fmt.Println("完成，窗口将在5秒后关闭")
+	fmt.Println("打包完成，窗口将在5秒后关闭")
 	<-time.After(time.Second * 5)
 }
 
