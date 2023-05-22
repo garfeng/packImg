@@ -1,0 +1,7 @@
+vendor/
+*.bmp
+*.png
+*.jpg
+*.exe
+*.dll
+.idea/
